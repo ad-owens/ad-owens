@@ -4,12 +4,16 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I enjoy creative data science and product economics.  Avid indie movie buff, mountain climber and adventure racer.  I like working with brilliant people to solve big stuff and create amazing products.  
 
-### More Information
+### Columbia Machine Learning Coursework
 
-A place to include any other types of information that you'd like to include about yourself.
+Coursework taken:
+
+Machine Learning
+Big Data Analytics
+
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[adam.david.owens@gmail.com](mailto:adam.david.owens@gmail.com)
