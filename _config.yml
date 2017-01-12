@@ -3,15 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: Adam Owens Blog
+name: Data Science Blog - Adam Owens
 
 # Short bio or description (displayed in the header)
-description: Data Science in Finance and Marketing
+description: Machine Learning, Deep Learning, and Artificial Intelligence
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/ad-owens/ad-owens/master/images/profile_pic.jpg
-
-#https://github.com/ad-owens/ad-owens/blob/master/images/profile_pic.jpg
 
 #
 # Flags below are optional
@@ -25,7 +23,7 @@ footer-links:
   flickr:
   github: ad-owens
   instagram:
-  linkedin:
+  linkedin:adam-owens-71732b13
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: adam_d_owens
