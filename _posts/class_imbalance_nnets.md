@@ -3,14 +3,11 @@ layout: post
 title: Training Neural Nets with Class Imbalance
 ---
 
+
 ![_config.yml]({{ site.baseurl }}/images/balance.jpg)
 
 Christmas is the most wonderful time of year!  Also, surprisingly, it’s the one time each year that I actually enjoy cooking.  My sister and I found a great lemon pound cake recipe and on December 24th, we went for it!  We had all the ingredients but in the kitchen were several unmarked jars of white substances—flour, baking powder, baking soda, sugar, salt, powdered sugar….which is which?!  Me being more data scientist than baker, it prompts me to think of a classification problem and not just any classification problem but a class imbalance classification problem.  My sister and I not only need to know which ingredients to include but also how much to include of the unmarked jars.
 
-
-<div style="text-align: center">
-  <img src="https://github.com/ad-owens/ad-owens/tree/master/images/jars.jpg?raw=true"/>
-</div>
 
 ![_config.yml]({{ site.baseurl }}/images/jars.jpg)
 
