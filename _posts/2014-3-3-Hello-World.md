@@ -3,6 +3,10 @@ layout: post
 title: Training Neural Nets with Class Imbalance
 ---
 
+<p align="center">
+  <img src="https://github.com/ad-owens/ad-owens/tree/master/images/balance?raw=true"/>
+</p>
+
 ![_config.yml]({{ site.baseurl }}/images/balance.jpg)
 
 Christmas is the most wonderful time of year!  Also, surprisingly, it’s the one time each year that I actually enjoy cooking.  My sister and I found a great lemon pound cake recipe and on December 24th, we went for it!  We had all the ingredients but in the kitchen were several unmarked jars of white substances—flour, baking powder, baking soda, sugar, salt, powdered sugar….which is which?!  Me being more data scientist than baker, it prompts me to think of a classification problem and not just any classification problem but a class imbalance classification problem.  My sister and I not only need to know which ingredients to include but also how much to include of the unmarked jars.
@@ -30,12 +34,12 @@ Finally, we need to TRAIN our MLP!  Here we’ll use Stochastic Gradient Descent
 SGD, Backprop, and Regularization are VERY important and, yes, I’m skimming over them right now because each topic requires a thorough explanation.  Luckily, a lot of smart people have already written excellent tutorials about it [here](https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/), here, and here (links).
 
 So, let’s recap the MLP Algorithm: 
-1)	Input layer feeds forward into hidden layer neurons
-2)	Each hidden layer neuron calculates an output with respect to the loss function
-3)	The hidden layer output is “squashed” by the activation function
-4)	The output layer receives the hidden layer output and calculates the final output with respect to the loss function
-5)	The final output is transformed to accommodate multi-class classification
-6)	Train the algorithm by backpropagation using SGD and L1/L2 regularization
+⋅⋅1. Input layer feeds forward into hidden layer neurons
+⋅⋅2. Each hidden layer neuron calculates an output with respect to the loss function
+⋅⋅3. The hidden layer output is “squashed” by the activation function
+⋅⋅4. The output layer receives the hidden layer output and calculates the final output with respect to the loss function
+⋅⋅5. The final output is transformed to accommodate multi-class classification
+⋅⋅6. Train the algorithm by backpropagation using SGD and L1/L2 regularization
 
 Phew!  There’s a reason why books are written on Neural Networks and Deep Learning.  This only scratches the surface.  
 
