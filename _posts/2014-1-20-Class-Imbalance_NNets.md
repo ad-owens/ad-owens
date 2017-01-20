@@ -36,7 +36,7 @@ So, let’s recap the MLP Algorithm:
 3. The hidden layer output is “squashed” by the activation function
 4. The output layer receives the hidden layer output and calculates the final output with respect to the loss function
 5. The final output is transformed to accommodate multi-class classification
-6. Train the algorithm by backpropagation using SGD and L1/L2 regularization
+6. Train the algorithm by backpropagation using SGD
 
 Phew!  There’s a reason why books are written on Neural Networks and Deep Learning.  This only scratches the surface.  
 
