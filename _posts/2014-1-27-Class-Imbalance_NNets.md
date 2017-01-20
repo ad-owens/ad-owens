@@ -19,7 +19,7 @@ Christmas is the most wonderful time of year!  Also, surprisingly, it’s the on
   <img src="({{ site.baseurl }}/images/jars.jpg)">
 </p>
 
-![jars](({{ site.baseurl }}/images/jars.jpg)){: .center-image }
+![_config.yml]({{ site.baseurl }}/images/jars.jpg){: .center-image }
 
 Mult-Layer Perceptrons Theory: 
 
