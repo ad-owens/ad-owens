@@ -9,7 +9,7 @@ Christmas is the most wonderful time of year!  Also, surprisingly, it’s the on
 
 
 <div style="text-align: center">
-  <img src="https://github.com/ad-owens/ad-owens/tree/master/images/jars.jpg"/>
+  <img src="https://github.com/ad-owens/ad-owens/tree/master/images/jars.jpg?raw=true"/>
 </div>
 
 ![_config.yml]({{ site.baseurl }}/images/jars.jpg)
