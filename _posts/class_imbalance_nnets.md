@@ -72,5 +72,4 @@ Beautiful!  That’s are gradient we’ll use to tune our MLP and attempt to reb
 
 Note: Not every is a fan of Lemon Pound Cake examples. So, I actually came across this problem while working with HDMA data from the Consumer Financial Protection Bureau.  The data consists of mortgage approvals and mortgage selling in the secondary markets.  The purpose is to keep banks accountable of possible predator or improper loan approval/denials.  The data engineering from the HDMA API can be found [here](https://github.com/ad-owens/vault-econ/blob/master/HDMA/data_engineering.py) and the full ML script in Jupyter notebook can be found [here](https://github.com/ad-owens/vault-econ/blob/master/HDMA/hdma_ML_analysis.ipynb). I’ll be making additional updates to the ML script soon……
 
-
 [Link](https://github.com/barryclark/jekyll-now)
