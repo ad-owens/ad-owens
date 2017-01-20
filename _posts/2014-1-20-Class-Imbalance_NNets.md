@@ -6,7 +6,7 @@ title: Training Neural Nets with Class Imbalance
 
 ![_config.yml]({{ site.baseurl }}/images/balance.jpg)
 
-Christmas is the most wonderful time of year!  Also, surprisingly, it’s the one time each year that I actually enjoy cooking.  My sister and I found a great lemon pound cake recipe and on December 24th, we went for it!  We had all the ingredients but in the kitchen were several unmarked jars of white substances—flour, baking powder, baking soda, sugar, salt, powdered sugar….which is which?!  Me being more data scientist than baker, it prompts me to think of a classification problem and not just any classification problem but a class imbalance classification problem.  My sister and I not only need to know which ingredients to include but also how much to include of the unmarked jars.
+Christmas is the most wonderful time of year!  Also, surprisingly, it’s the one time each year that I actually enjoy cooking.  My sister and I found a great lemon pound cake recipe and on December 24th, we went for it!  We had all the ingredients but in the kitchen were several unmarked jars of white substances—flour, baking powder, baking soda, sugar, salt, powdered sugar….which is which?!  Me being more data scientist than baker, the dilemma prompts me to think of a classification problem and not just any classification problem but a **class imbalance classification problem**.  My sister and I not only need to know _which_ ingredients to include but also _how much_ to include of the unmarked jars.
 
 ![_config.yml]({{ site.baseurl }}/images/jars.jpg){: .center-image }
 
@@ -16,7 +16,7 @@ Many machine learning algos can tackle this problem with ease but let’s assume
 
 ![_config.yml]({{ site.baseurl }}/images/mlp.png){: .center-image }
 
-Key components of an MLP are the hidden layer(s) and fitting a non-linear function.  If we didn’t include the hidden layer then the neural network would be a simple linear regression.  Each hidden neuron takes inputs and weights them with a mean squared cost function—or another defined loss function—on the forward feed.  Then, the output is put through an activation function s.  Two most common activation functions for s are sigmoid (outputting 0 to 1) and tanh (outputting -1 to 1). Both tanh and sigmoid are scalar-to-scalar functions but we’ll utilize tanh because it creates a slightly larger range and tends to train faster.   Comparison of the two functions is below:
+Key components of an MLP are the hidden layer(s) and fitting a non-linear function.  If we didn’t include the hidden layer then the neural network would be a simple linear regression.  Each hidden neuron takes inputs and weights them with a mean squared cost function—or another defined loss function—on the forward feed.  Then, the output is put through an activation function s.  Two most common activation functions for s are sigmoid (outputting 0 to 1) and tanh (outputting -1 to 1). Both _tanh_ and _sigmoid_ are scalar-to-scalar functions but we’ll utilize tanh because it creates a slightly larger range and tends to train faster.   Comparison of the two functions is below:
 
 ![_config.yml]({{ site.baseurl }}/images/tanh.png){: .center-image }
 
@@ -24,11 +24,11 @@ Carrying from our first equation, the output from the hidden layer is then feed 
 
 ![_config.yml]({{ site.baseurl }}/images/outer_layer.png){: .center-image }
 
-We’re looking for class-membership probabilities so G will be a softmax function.
+We’re looking for class-membership probabilities so G will be a _softmax_ function.
 
-Finally, we need to TRAIN our MLP!  Here we’ll use Stochastic Gradient Descent (SGD) with minibatches. The set of parameters we’re learning are weights (W) and biases (b).   We’ll obtain gradients from the backpropagation algorithm with each minibatch and then adjust the weights with the gradient * learning rate.  The biases will adjust according the loss function after the weights are adjusted.  Finally, it may be a good idea to introduce an L1 or L2 regularization term in the loss function.  
+Finally, we need to TRAIN our MLP!  Here we’ll use Stochastic Gradient Descent (SGD) with minibatches. The set of parameters we’re learning are weights (W) and biases (b).   We’ll obtain gradients from the backpropagation algorithm with each minibatch and then adjust the weights with the gradient * learning rate.  The biases will adjust according the loss function _after_ the weights are adjusted.   
 
-SGD, Backprop, and Regularization are VERY important and, yes, I’m skimming over them right now because each topic requires a thorough explanation.  Luckily, a lot of smart people have already written excellent tutorials about it [here](https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/), here, and here (links).
+SGD, Backprop, and Regularization are VERY important and, yes, I’m skimming over them right now because each topic requires a thorough explanation.  Luckily, a lot of smart people have already written excellent tutorials about it [here](http://sebastianruder.com/optimizing-gradient-descent/), [here](https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/), and [here](http://stats.stackexchange.com/questions/4961/what-is-regularization-in-plain-english).
 
 So, let’s recap the MLP Algorithm: 
 ⋅⋅1. Input layer feeds forward into hidden layer neurons
