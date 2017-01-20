@@ -42,17 +42,17 @@ Phew!  There’s a reason why books are written on Neural Networks and Deep Lear
 
 Note: DON’T FORGET to standardize the input data.  Different magnitudes and distributions of input data could create bias and slow down the learning process.  It isn’t strictly necessary to standardize the input data but it has several practical benefits.  Perhaps more importantly, DO perform PCA and other techniques to decorrelate the inputs. 
 
-Correcting for Class Imbalance
+### Correcting for Class Imbalance
 
 Problems with class imbalance occur at two parts in the MLP: data sampling and cost function.  
 
-DATA SAMPLING
+#### DATA SAMPLING
 
 If we could just get evenly distributed classes then class imbalance wouldn’t exist!  Oversampling, undersampling, or a little of both can be used to even out class imbalance.  Of course, BE CAREFUL not to throw away data that could add important information to your model.   Also, check feature variances before and after the resampling.  If the sample distributions & variances match the population distributions & variances then you’re ready to give the new sample a try.
 
 Another option is to reclassify the classes to binary. In the lemon pound cake example, let’s see if we can correctly classify sugar & salt (crystals) vs flour & baking soda (powder).  Then, we can run an additional classifier for each sub-class to form a classifier chain ensemble.  This method adds to the complexity of the model and, in general, is a long shot to improve accuracy.  Still, it’s an option that might work beautifully if the data splits easily.  
 
-REDEFINCE COST FUNCTION
+#### REDEFINCE COST FUNCTION
 
 The heart of the class imbalance lies with the cost function.  In our MLP, we selected a mean squared cost function.  In order to compensate for imbalanced classes, we want to penalize an error in less frequent classes more than frequent classes.  In our new cost function, we’ll penalize each class by the inverse of the class share. 
 
@@ -66,4 +66,4 @@ Beautiful!  That’s are gradient we’ll use to tune our MLP and attempt to reb
 
 ![_config.yml]({{ site.baseurl }}/images/Lemon-Pound-Cake.png){: .center-image }
 
-Note: Not every is a fan of Lemon Pound Cake examples. So, I actually came across this problem while working with HDMA data from the Consumer Financial Protection Bureau.  The data consists of mortgage approvals and mortgage selling in the secondary markets.  The purpose is to keep banks accountable of possible predator or improper loan approval/denials.  The data engineering from the HDMA API can be found [here](https://github.com/ad-owens/vault-econ/blob/master/HDMA/data_engineering.py) and the full ML script in Jupyter notebook can be found [here](https://github.com/ad-owens/vault-econ/blob/master/HDMA/hdma_ML_analysis.ipynb). I’ll be making additional updates to the ML script soon……
+**Note**: Not every is a fan of Lemon Pound Cake examples. So, I actually came across this problem while working with HDMA data from the Consumer Financial Protection Bureau.  The data consists of mortgage approvals and mortgage selling in the secondary markets.  The purpose is to keep banks accountable of possible predator or improper loan approval/denials.  The data engineering from the HDMA API can be found [here](https://github.com/ad-owens/vault-econ/blob/master/HDMA/data_engineering.py) and the full ML script in Jupyter notebook can be found [here](https://github.com/ad-owens/vault-econ/blob/master/HDMA/hdma_ML_analysis.ipynb). I’ll be making additional updates to the ML script soon……
