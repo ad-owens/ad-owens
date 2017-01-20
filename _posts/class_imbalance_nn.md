@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ok, Edit this Shit!
+title: Neural Networks and Class Imbalance
 ---
 
 ![_config.yml]({{ site.baseurl }}/images/balance.jpg)
