@@ -12,6 +12,10 @@ Christmas is the most wonderful time of year!  Also, surprisingly, it’s the on
 ![_config.yml]({{ site.baseurl }}/images/jars.jpg)
 
 <p align="center">
+![jars]({{ site.baseurl }}/images/jars.jpg)
+</p>
+
+<p align="center">
   <br><br>
   <img src="https://github.com/ad-owens/ad-owens/tree/master/images/jars.jpg">
 </p>
