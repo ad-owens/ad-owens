@@ -14,15 +14,15 @@ Mult-Layer Perceptrons Theory:
 
 Many machine learning algos can tackle this problem with ease but let’s assume we need high accuracy and decide to use a Artificial Neural Nets (ANN) algorithm. Furthermore, let’s focus on a feedforward, 3-layer multi-layer perceptrons (MLP):
 
-![_config.yml]({{ site.baseurl }}/images/mlp.png)
+![_config.yml]({{ site.baseurl }}/images/mlp.png){: .center-image }
 
 Key components of an MLP are the hidden layer(s) and fitting a non-linear function.  If we didn’t include the hidden layer then the neural network would be a simple linear regression.  Each hidden neuron takes inputs and weights them with a mean squared cost function—or another defined loss function—on the forward feed.  Then, the output is put through an activation function s.  Two most common activation functions for s are sigmoid (outputting 0 to 1) and tanh (outputting -1 to 1). Both tanh and sigmoid are scalar-to-scalar functions but we’ll utilize tanh because it creates a slightly larger range and tends to train faster.   Comparison of the two functions is below:
 
-![_config.yml]({{ site.baseurl }}/images/tanh.png)
+![_config.yml]({{ site.baseurl }}/images/tanh.png){: .center-image }
 
 Carrying from our first equation, the output from the hidden layer is then feed to the final output layer defined as:
 
-![_config.yml]({{ site.baseurl }}/images/outer_layer.png)
+![_config.yml]({{ site.baseurl }}/images/outer_layer.png){: .center-image }
 
 We’re looking for class-membership probabilities so G will be a softmax function.
 
@@ -56,17 +56,14 @@ REDEFINCE COST FUNCTION
 
 The heart of the class imbalance lies with the cost function.  In our MLP, we selected a mean squared cost function.  In order to compensate for imbalanced classes, we want to penalize an error in less frequent classes more than frequent classes.  In our new cost function, we’ll penalize each class by the inverse of the class share. 
 
-![_config.yml]({{ site.baseurl }}/images/error_function.png)
+![_config.yml]({{ site.baseurl }}/images/error_function.png){: .center-image }
 
 For example, if class x is .2 and class y is .8 of the total class share, then costx = .8 and costy = .2. This will “give more say” to the little guy in adjusting the error.  Our new cost function is then used to calculate the gradient for backpropagation tuning.  
 
-![_config.yml]({{ site.baseurl }}/images/gradient.png)
+![_config.yml]({{ site.baseurl }}/images/gradient.png){: .center-image }
 
 Beautiful!  That’s are gradient we’ll use to tune our MLP and attempt to rebalance our imbalance by weighting the errors according to the class share.  Our adjusted model has compensated, as best it can, for class imbalance.  Hopefully, with a lot of careful consideration, the model will turn out something like this.  
 
-![_config.yml]({{ site.baseurl }}/images/Lemon-Pound-Cake.png)
+![_config.yml]({{ site.baseurl }}/images/Lemon-Pound-Cake.png){: .center-image }
 
 Note: Not every is a fan of Lemon Pound Cake examples. So, I actually came across this problem while working with HDMA data from the Consumer Financial Protection Bureau.  The data consists of mortgage approvals and mortgage selling in the secondary markets.  The purpose is to keep banks accountable of possible predator or improper loan approval/denials.  The data engineering from the HDMA API can be found [here](https://github.com/ad-owens/vault-econ/blob/master/HDMA/data_engineering.py) and the full ML script in Jupyter notebook can be found [here](https://github.com/ad-owens/vault-econ/blob/master/HDMA/hdma_ML_analysis.ipynb). I’ll be making additional updates to the ML script soon……
-
-
-[Link](https://github.com/barryclark/jekyll-now)
