@@ -10,7 +10,7 @@ Christmas is the most wonderful time of year!  Also, surprisingly, it’s the on
 
 ![_config.yml]({{ site.baseurl }}/images/jars.jpg){: .center-image }
 
-Mult-Layer Perceptrons Theory: 
+### Mult-Layer Perceptrons Theory: 
 
 Many machine learning algos can tackle this problem with ease but let’s assume we need high accuracy and decide to use a Artificial Neural Nets (ANN) algorithm. Furthermore, let’s focus on a feedforward, 3-layer multi-layer perceptrons (MLP):
 
