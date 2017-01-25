@@ -4,11 +4,11 @@ title: Training Neural Nets with Class Imbalance
 ---
 
 
-![_config.yml]({{ site.baseurl }}/images/balance.jpg)
+![]({{ site.baseurl }}/images/balance.jpg)
 
-Christmas is the most wonderful time of year!  Also, surprisingly, it’s the one time each year that I actually enjoy cooking.  My sister and I found a great lemon pound cake recipe and on December 24th, we went for it!  We had all the ingredients but in the kitchen were several unmarked jars of white substances—flour, baking powder, baking soda, sugar, salt, powdered sugar….which is which?!  Me being more data scientist than baker, the dilemma prompts me to think of a classification problem and not just any classification problem but a **class imbalance classification problem**.  My sister and I not only need to know _which_ ingredients to include but also _how much_ to include of the unmarked jars.
+My sister and I found a great lemon pound cake recipe and on December 24th, we went for it!  We had all the ingredients but in the kitchen were several unmarked jars of white substances—flour, baking powder, baking soda, sugar, salt, powdered sugar….which is which?!  Me being more data scientist than baker, the dilemma prompts me to think of a classification problem and not just any classification problem but a **class imbalance classification problem**.  My sister and I not only need to know _which_ ingredients to include but also _how much_ to include of the unmarked jars.
 
-![_config.yml]({{ site.baseurl }}/images/jars.jpg){: .center-image }
+![]({{ site.baseurl }}/images/jars.jpg){: .center-image }
 
 ### Mult-Layer Perceptrons Theory: 
 
@@ -53,7 +53,7 @@ If we could just get evenly distributed classes then class imbalance wouldn’t 
 
 Another option is to reclassify the classes to binary. In the lemon pound cake example, let’s see if we can correctly classify sugar & salt (crystals) vs flour & baking soda (powder).  Then, we can run an additional classifier for each sub-class to form a classifier chain ensemble.  This method adds to the complexity of the model and, in general, is a long shot to improve accuracy.  Still, it’s an option that might work beautifully if the data splits easily.  
 
-#### REDEFINCE COST FUNCTION
+#### REDEFINE COST FUNCTION
 
 The heart of the class imbalance lies with the cost function.  In our MLP, we selected a mean squared cost function.  In order to compensate for imbalanced classes, we want to penalize an error in less frequent classes more than frequent classes.  In our new cost function, we’ll penalize each class by the inverse of the class share. 
 
