@@ -4,9 +4,9 @@ title: Training Neural Nets with Class Imbalance
 ---
 
 
-![]({{ site.baseurl }}/images/balance.jpg =200x200)
+![]({{ site.baseurl }}/images/balance.jpg =200x400)
 
-My sister and I found a great lemon pound cake recipe and on December 24th, we went for it!  We had all the ingredients but in the kitchen were several unmarked jars of white substances—flour, baking powder, baking soda, sugar, salt, powdered sugar….which is which?!  Me being more data scientist than baker, the dilemma prompts me to think of a classification problem and not just any classification problem but a **class imbalance classification problem**.  My sister and I not only need to know _which_ ingredients to include but also _how much_ to include of the unmarked jars.
+My Sister and I found a great lemon pound cake recipe and on December 24th, we went for it!  We had all the ingredients but in the kitchen were several unmarked jars of white substances—flour, baking powder, baking soda, sugar, salt, powdered sugar….which is which?!  Me being more data scientist than baker, the dilemma prompts me to think of a classification problem and not just any classification problem but a **class imbalance classification problem**.  My sister and I not only need to know _which_ ingredients to include but also _how much_ to include of the unmarked jars.
 
 ![]({{ site.baseurl }}/images/jars.jpg){: .center-image }
 
