@@ -26,7 +26,7 @@ Carrying from our first equation, the output from the hidden layer is then feed 
 
 We’re looking for class-membership probabilities so G will be a _softmax_ function.
 
-Finally, we need to TRAIN our MLP!  Here we’ll use Stochastic Gradient Descent (SGD) with minibatches. The set of parameters we’re learning are weights (W) and biases (b).   We’ll obtain gradients from the backpropagation algorithm with each minibatch and then adjust the weights with the gradient * learning rate.  The biases will adjust according the loss function _after_ the weights are adjusted.   
+Finally, we need to TRAIN our MLP!  Here we’ll use Stochastic Gradient Descent (SGD) with minibatches. The set of parameters we’re learning are weights (W) and biases (b).   We’ll obtain gradients from the backpropagation algorithm with each minibatch and then adjust the weights with the gradient _learning rate_.  The biases will adjust according the loss function _after_ the weights are adjusted.   
 
 SGD, Backprop, and Regularization are VERY important and, yes, I’m skimming over them right now because each topic requires a thorough explanation.  Luckily, a lot of smart people have already written excellent tutorials about it [here](http://sebastianruder.com/optimizing-gradient-descent/), [here](https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/), and [here](http://stats.stackexchange.com/questions/4961/what-is-regularization-in-plain-english).
 
